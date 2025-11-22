@@ -11,10 +11,9 @@ architecture tb of fsm_tb is
     signal X       : std_logic := '0';
     signal Z       : std_logic;
 
-    constant X_seq : std_logic_vector(0 to 18) :=
-        ("0","1","0","0","0","1","0","0","1","1",
-         "0","1","0","1","1","0","0","0","1");
-
+constant X_seq : std_logic_vector(0 to 18) :=
+    ('0','1','0','0','0','1','0','0','1','1',
+     '0','1','0','1','1','0','0','0','1');
 begin
 
     dut: entity work.fsm_behavioral
